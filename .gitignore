@@ -32,3 +32,9 @@ Thumbs.db
 .coverage
 htmlcov/
 .pytest_cache/
+
+# Packet Capture files
+*.pcap
+
+# Commit message file
+commit_msg
