@@ -1,0 +1,11 @@
+ip route get 192.168.15.34 | awk '{for(i=1;i<=NF;i++) if($i=="dev") print $(i+1)}'
+
+sudo ip neigh del 192.168.15.34 dev eth0
+
+sudo tcpdump -i eth0 -w arp-resolution.pcap
+
+ping -c 1 192.168.15.34
+
+
+ip neigh
+
